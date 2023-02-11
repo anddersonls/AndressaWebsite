@@ -112,11 +112,10 @@ body{
   }
   
   body{
-    background-color: #f7afaa;
+    background-color: #efe9d7;
   }
   
   .header {
-    background-color: #de9994;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -125,6 +124,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 999;
+    background-color: #efe9d7;
   }
   
   .navbar__container {
@@ -139,7 +139,7 @@ body{
   }
   
   #navbar__logo {
-    color: #c15850;
+    color: black;
     background-size: 100%;
     display: flex;
     align-items: center;
@@ -160,7 +160,7 @@ body{
   }
   
   .navbar__links {
-    color: #c15850;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +212,7 @@ body{
     }
   
     .navbar__menu.active {
-      background: #e09c9c;
+      background: #efe9d7;
       top: 100%;
       opacity: 1;
       transition: all 0.5s ease;
@@ -257,8 +257,8 @@ body{
       border: none;
       outline: none;
       border-radius: 4px;
-      background: #c15850;
-      color: #fff;
+      background: #adaaaa;
+      color: rgb(255, 255, 255);
       transition: all 0.3s ease;
       width: 40%;
       height: 80px;
@@ -267,7 +267,7 @@ body{
     }
 
     .button:hover{
-        background-color: #b76b66;
+        background-color: #837d7c;
         transition: all 0.5s ease;
     }
 
@@ -334,7 +334,7 @@ body{
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .intro-img-container{
@@ -372,4 +372,82 @@ body{
 
 #intro-button:hover{
   background: #92423c;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  margin: 60px 30px 30px 30px;
+  color: #736969;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  /*background-image: url(imagens/mapa.png);
+  background-repeat: no-repeat;
+  background-size: 20vw;
+  background-position: 50px 80px ; */
+}
+
+.about_me_container{
+  max-width: 70vw;
+  width: 100%;
+}
+
+.about_me_text1{
+  text-align: justify;
+}
+
+.about_me_text2{
+  text-align: justify;
+}
+
+
+/* SERVICES */
+
+.services{
+  margin: 60px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_container{
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
+  padding: 1%;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.card_container img{
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+}
+
+.card_container p{
+  margin-bottom: 2%;
+}
+
+.card_container a{
+  border-bottom: 2px solid #92423c;
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.card_container a:hover{
+  color: #b76b66;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 760px){
+  .card_container{
+    padding: 2%;
+  }
 }
