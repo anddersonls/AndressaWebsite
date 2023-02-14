@@ -525,3 +525,28 @@ body{
     background-color: #7d7170;
     transition: all 0.5s ease
 }
+
+/*footer */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 43vh;
+}
+
+.footer_container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  height: 2.5rem;
+}
+
+.footer_icons_container a{
+  margin: 0 2px;
+  text-decoration: none;
+  color: black;
+}
