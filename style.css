@@ -107,7 +107,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Apple Chancery, cursive;
     scroll-behavior: smooth;
   }
   
@@ -141,8 +141,6 @@ body{
   }
   
   #navbar__logo {
-    color: black;
-    background-size: 100%;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -152,13 +150,14 @@ body{
   #navbar__logo img{
     max-width: 300px;
     width: 100%;
+    height: 300px;
     margin-top: -40px;
   }
   .navbar__menu {
     display: flex;
     align-items: center;
     list-style: none;
-    font-weight: bold;
+ 
   }
   
   .navbar__item {
@@ -226,9 +225,6 @@ body{
       font-size: 1.2rem;
     }
   
-    #navbar__logo {
-      padding-left: 25px;
-    }
   
     .navbar__toggle .bar {
       width: 25px;
@@ -459,17 +455,52 @@ body{
 }
 
 @media screen and (max-width: 760px){
+  /* services */
   .card_container{
     padding: 2%;
   }
 
-  .links_container{
-
-  }
-
+  /* intro */
   .links_container a{
     font-size: 0.8rem;
+}
 
+  /* timeline */
+  .timeline{
+    margin: 50px auto;
+  }
+  .timeline::after{
+    left: 30px;
+  }
+
+  .timeline_container{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .timeline_textbox{
+    font-size: 0.8rem;
+  }
+
+  .right_container{
+    left: 0;
+  }
+  
+  .left_container_arrow, .right_container_arrow{
+    border-right: 15px solid white;
+    border-left: 0;
+    left: -14px;
+  }
+
+  /* logo */
+  .navbar__logo img{
+    width: 30%;
+  }
+
+  .header {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -495,8 +526,8 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  font-weight: bold;
   border-radius: 4px;
+  margin: 8px
 }
 
 .aboutme_button{
@@ -508,34 +539,29 @@ body{
 
 .aboutme_button:hover{
   background-color: #837d7c;
-  margin: 3px;
-  transition: all 0.5s ease;
+  transform: translateY(-3px)
 }
 
 .services_button{
   background-color: rgb(149, 146, 146);
   border: 2px solid #774646;
-  margin: 3px;
   transition: all 0.5s ease;
 }
 
 .services_button:hover{
   background-color: #595655;
-  margin: 3px;
-  transition: all 0.5s ease;
+  transform: translateY(-3px);
 }
 
 .timeline_button{
   background-color: rgb(122, 122, 122);
   border: 2px solid #774646;
-  margin: 3px;
   transition: all 0.5s ease;
 }
 
 .timeline_button:hover{
   background-color: #a89797;
-  padding: 6px;
-  transition: all 0.5s ease;
+  transform: translateY(-3px);
 }
 
 .contact_button{
@@ -551,7 +577,7 @@ body{
 
 .contact_button:hover{
     background-color: #7d7170;
-    transition: all 0.5s ease;
+    transform: translateY(-3px);
 }
 
 /*footer */
@@ -561,7 +587,7 @@ footer{
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 40vh;
+  min-height: 35vh;
   font-size: 1.1rem;
   transition: all 0.3s ease;
 }
@@ -692,33 +718,4 @@ footer{
   border-bottom: 15px solid transparent;
   border-right: 15px solid rgb(255, 255, 255);
   left: -14px
-}
-
-@media screen and (max-width: 600px){
-  .timeline{
-    margin: 50px auto;
-  }
-  .timeline::after{
-    left: 30px;
-  }
-
-  .timeline_container{
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-  }
-
-  .timeline_textbox{
-    font-size: 0.8rem;
-  }
-
-  .right_container{
-    left: 0;
-  }
-  
-  .left_container_arrow, .right_container_arrow{
-    border-right: 15px solid white;
-    border-left: 0;
-    left: -14px;
-  }
 }
