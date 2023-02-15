@@ -431,10 +431,6 @@ body{
   border-radius: 10px;
 }
 
-.card-container:hover{
-
-}
-
 .card_container img{
   width: 100%;
   margin-bottom: 20px;
@@ -462,6 +458,15 @@ body{
   .card_container{
     padding: 2%;
   }
+
+  .links_container{
+
+  }
+
+  .links_container a{
+    font-size: 0.8rem;
+
+  }
 }
 
 
@@ -481,11 +486,11 @@ body{
   text-decoration: none;
   color: rgb(255, 255, 255);
   max-width: 400px;
-  width: 100%;
+  width: 50%;
   height: 50px;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 4px;
 }
