@@ -328,6 +328,11 @@ body{
       width: 70%;
     }
 
+    .about.footer_container{
+      position: absolute;
+      bottom: 0;
+    }
+
 }
 
 /* INTRODUCTION SECTION */
@@ -400,9 +405,25 @@ body{
   width: 100%;
 }
 
-.about_text{
+.aboutme_content{
+  position: relative;
+  margin-top: 100px;
+  transition: all 0.5s ease;
+}
+
+.about.footer_container{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: -100px;
+  padding-bottom: 10px;
+  width: 100vw;
+}
+
+.aboutme_me{
   height: 100vh;
 }
+
 .about_me_text1{
   text-align: justify;
 }
