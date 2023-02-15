@@ -125,6 +125,7 @@ body{
     top: 0;
     z-index: 999;
     background-color: #efe9d7;
+    transition: all 0.3s ease;
   }
   
   .navbar__container {
@@ -136,6 +137,7 @@ body{
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    transition: all 0.3s ease;
   }
   
   #navbar__logo {
@@ -164,10 +166,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
+    width: 150px;
     text-decoration: none;
     height: 100%;
-    transition: all 0.3s ease;
   }
   
   .navbar__btn {
@@ -335,6 +336,7 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  transition: all 0.5s ease;
 }
 
 .intro-img-container{
@@ -384,6 +386,7 @@ body{
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  transition: all 0.5s ease
   /*background-image: url(imagens/mapa.png);
   background-repeat: no-repeat;
   background-size: 20vw;
@@ -411,6 +414,11 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.5s ease;
+}
+
+.services:hover{
+  transform: scale3d(1.03, 1.03, 1);
 }
 
 .card_container{
@@ -421,6 +429,10 @@ body{
   font-size: 1rem;
   margin-top: 10px;
   border-radius: 10px;
+}
+
+.card-container:hover{
+
 }
 
 .card_container img{
@@ -482,36 +494,39 @@ body{
   background-color: rgb(185, 183, 183);
   border: 2px solid #774646;
   margin: 3px;
+  transition: all 0.5s ease;
 }
 
 .aboutme_button:hover{
   background-color: #837d7c;
   margin: 3px;
-  transition: all 0.5s ease
+  transition: all 0.5s ease;
 }
 
 .services_button{
   background-color: rgb(149, 146, 146);
   border: 2px solid #774646;
   margin: 3px;
+  transition: all 0.5s ease;
 }
 
 .services_button:hover{
   background-color: #595655;
   margin: 3px;
-  transition: all 0.5s ease
+  transition: all 0.5s ease;
 }
 
 .timeline_button{
   background-color: rgb(122, 122, 122);
   border: 2px solid #774646;
   margin: 3px;
+  transition: all 0.5s ease;
 }
 
 .timeline_button:hover{
   background-color: #a89797;
   padding: 6px;
-  transition: all 0.5s ease
+  transition: all 0.5s ease;
 }
 
 .contact_button{
@@ -519,11 +534,12 @@ body{
     border: 2px solid #774646;
     transition: all 0.3s ease;
     margin: 3px;
+    transition: all 0.5s ease;
   }
 
 .contact_button:hover{
     background-color: #7d7170;
-    transition: all 0.5s ease
+    transition: all 0.5s ease;
 }
 
 /*footer */
@@ -533,7 +549,9 @@ footer{
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 43vh;
+  min-height: 41vh;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
 .footer_container{
