@@ -334,6 +334,16 @@ footer{
 
 
 /* TIMELINE */
+.title_content{
+  width: 100vw;
+}
+
+.timeline_title{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .timeline_content{
   margin-top: 100px;
   transition: all 0.5s ease;
@@ -345,7 +355,7 @@ footer{
   position: absolute;
   display: flex;
   justify-content: center;
-  bottom: -100px;
+  bottom: -300px;
   padding-bottom: 10px;
   width: 100vw;
 }
@@ -399,7 +409,7 @@ footer{
   width: 6px;
   height: 100%;
   background: white;
-  top: 0;
+  top: 200px;
   left: 50%;
   margin-left: -3px;
   z-index: -1;
@@ -623,6 +633,7 @@ footer{
   .timeline{
     margin: 50px auto;
   }
+
   .timeline::after{
     left: 30px;
   }
@@ -657,6 +668,7 @@ footer{
     justify-content: flex-start;
   }
 
+  /* TIMELINE */
   .timeline_content{
     margin: 50px auto;
   }
