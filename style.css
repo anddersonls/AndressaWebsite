@@ -509,7 +509,7 @@ footer{
     transition: all 0.5s ease;
     z-index: 99;
     height: 60vh;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 
@@ -541,17 +541,15 @@ footer{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 5px 10px;
     border: none;
     outline: none;
     border-radius: 4px;
     background: #adaaaa;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
-    width: 40%;
-    height: 80px;
+    height: 60px;
     margin: 0;
-    min-width: 300px;
+    min-width: 200px;
   }
 
   .button:hover{
