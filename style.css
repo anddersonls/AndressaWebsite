@@ -39,6 +39,7 @@
   margin: 0 auto;
   padding: 0 50px;
   transition: all 0.3s ease;
+  font-weight: bold; 
 }
   
 #navbar__logo {
@@ -115,7 +116,8 @@
   align-items: center;
   font-size: 1.2rem;
   border-radius: 4px;
-  margin: 8px
+  margin: 8px;
+  font-weight: bold; 
 }
 
 .aboutme_button{
@@ -448,8 +450,8 @@ footer{
   animation-delay: 2.5s;
 }
 
-.timeline_textbox small{
-  display: inline-block;
+.timeline_textbox h3, .timeline_textbox h4{
+  display: block;
   margin-bottom: 15px;
 }
 
@@ -626,7 +628,7 @@ footer{
 
   /* intro */
   .links_container a{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
   /* timeline */
