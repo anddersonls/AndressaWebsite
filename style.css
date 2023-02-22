@@ -9,7 +9,7 @@
   }
   
   body{
-    background-color: #efe9d7;
+    background-color: #f0e0cc;
     min-height: 100vh;
     position: relative;
   }
@@ -25,7 +25,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #efe9d7;
+  background-color: #f0e0cc;
   transition: all 0.3s ease;
 }
   
@@ -121,42 +121,48 @@
 }
 
 .aboutme_button{
-  background-color: rgb(185, 183, 183);
-  border: 2px solid #774646;
+  background-color: rgb(192, 156, 116);
+  border: none;
   margin: 3px;
   transition: all 0.5s ease;
 }
 
 .aboutme_button:hover{
-  background-color: #837d7c;
-  transform: translateY(-3px)
+  background-color: #f0e0cc;
+  transform: translateY(-3px);
+  color: rgb(106, 72, 33);
+  border: 2px solid rgb(106, 72, 33);
 }
 
 .services_button{
-  background-color: rgb(149, 146, 146);
-  border: 2px solid #774646;
+  background-color: rgb(161, 124, 81);
+  border: none;
   transition: all 0.5s ease;
 }
 
 .services_button:hover{
-  background-color: #595655;
+  background-color: #f0e0cc;
   transform: translateY(-3px);
+  color: rgb(106, 72, 33);
+  border: 2px solid rgb(106, 72, 33);
 }
 
 .timeline_button{
-  background-color: rgb(122, 122, 122);
-  border: 2px solid #774646;
+  background-color: rgb(132, 98, 58);
+  border: none;
   transition: all 0.5s ease;
 }
 
 .timeline_button:hover{
-  background-color: #a89797;
+  background-color: #f0e0cc;
   transform: translateY(-3px);
+  color: rgb(106, 72, 33);
+  border: 2px solid rgb(106, 72, 33);
 }
 
 .contact_button{
-    background: #333333;
-    border: 2px solid #774646;
+    background: rgb(111, 77, 38);
+    border: none;
     transition: all 0.5s ease;
   }
 
@@ -166,8 +172,10 @@
 }
 
 .contact_button:hover{
-    background-color: #7d7170;
+    background-color: #f0e0cc;
     transform: translateY(-3px);
+    color: rgb(106, 72, 33);
+    border: 2px solid rgb(106, 72, 33);
 }
 
 
@@ -222,12 +230,12 @@
 .about-me{
   display: flex;
   flex-direction: column;
-  margin: 60px 30px 30px 30px;
+  margin: 60px 0px 30px 30px;
   color: #736969;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  transition: all 0.5s ease
+  transition: all 0.5s ease;
 }
 
 .about_me_container{
@@ -256,6 +264,7 @@
 
 .about_me_text1{
   text-align: justify;
+  line-height: 1.5em;
 }
 
 .about_me_text2{
@@ -359,20 +368,14 @@ footer{
   justify-content: center;
   bottom: -300px;
   padding-bottom: 10px;
-  width: 100vw;
-}
-
-.timeline{
-  position: relative;
-  max-width: 1200px;
-  margin: 100px auto;
-  background: black;
+  width: 100%;
 }
 
 .timeline_container{
   padding: 10px 50px;
   position: relative;
-  width: 50%;
+  max-width: 50%;
+  width: 100%;
   animation: movedown 1s linear forwards;
   opacity: 0;
 }
