@@ -52,8 +52,7 @@
 #navbar__logo img{
   max-width: 300px;
   width: 100%;
-  height: 300px;
-  margin-top: -40px;
+  margin: 0 20px;
 }
 
 .navbar__menu {
@@ -135,7 +134,7 @@
 }
 
 .services_button{
-  background-color: rgb(161, 124, 81);
+  background-color: rgb(192, 156, 116);
   border: none;
   transition: all 0.5s ease;
 }
@@ -148,7 +147,7 @@
 }
 
 .timeline_button{
-  background-color: rgb(132, 98, 58);
+  background-color: rgb(192, 156, 116);
   border: none;
   transition: all 0.5s ease;
 }
@@ -161,7 +160,7 @@
 }
 
 .contact_button{
-    background: rgb(111, 77, 38);
+    background: rgb(192, 156, 116);
     border: none;
     transition: all 0.5s ease;
   }
@@ -180,98 +179,30 @@
 
 
 /* ABOUT ME SECTION */
-.intro{
-  display: flex;
-  max-width: 100vw;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  transition: all 0.5s ease;
-}
-
-.intro-img-container{
-  display: flex;
-  justify-content: center;
-  margin: 0 30px;
-}
-
-.intro-content-container{
-  display: flex;
-  flex-direction: column;
-}
-
-.foto_perfil{
-  border-radius: 50%;
-}
-
-.intro-content{
-  margin: 20px 0;
-}
-
-#intro-button{
-  text-decoration: none;
-  text-align: center;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #c15850;
-  color: #fff;
-  transition: all 0.5s ease;
-  margin: 0;
-  width: 200px;
-}
-
-#intro-button:hover{
-  background: #92423c;
-}
-
 .about-me{
-  display: flex;
-  flex-direction: column;
-  margin: 60px 0px 30px 30px;
-  color: #736969;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
   transition: all 0.5s ease;
+  margin: 100px;
 }
 
-.about_me_container{
-  max-width: 70vw;
+.perfil-img{
+  max-width: 600px;
   width: 100%;
 }
 
-.aboutme_content{
-  position: relative;
-  margin-top: 100px;
-  transition: all 0.5s ease;
-}
-
-.about.footer_container{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: -100px;
-  padding-bottom: 10px;
-  width: 100vw;
-}
-
-.aboutme_me{
-  height: 100vh;
-}
-
-.about_me_text1{
-  text-align: justify;
-  line-height: 1.5em;
-}
-
-.about_me_text2{
+.about-text{
   text-align: justify;
 }
 
-
+.about-text2{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: justify;
+  place-items: start;
+}
 /* SERVICES */
 
 .services{
@@ -321,13 +252,12 @@
 
 
 /*footer */
-
-footer{
+.footer{
   position: absolute;
-  bottom: 10px;
   width: 100vw;
   font-size: 1.1rem;
   transition: all 0.3s ease;
+  bottom: 2%;
 }
 
 .footer_container{
@@ -359,15 +289,6 @@ footer{
   margin-top: 100px;
   transition: all 0.5s ease;
   max-width:  100vw;
-  width: 100%;
-}
-
-.time.footer_container{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: -300px;
-  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -481,6 +402,13 @@ footer{
 } 
 
 
+@media screen and (max-width: 1400px){
+  .about-me{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
 @media screen and (max-width: 960px) {
   /* HEADER */
   .navbar__container {
@@ -613,11 +541,6 @@ footer{
     max-width: 400px;
     width: 70%;
   }
-
-  .about.footer_container{
-    position: absolute;
-    bottom: 0;
-  }
 }
 
 
@@ -642,7 +565,7 @@ footer{
   }
 
   .timeline_container{
-    width: 100%;
+    max-width: 100%;
     padding-left: 80px;
     padding-right: 25px;
   }
@@ -662,8 +585,9 @@ footer{
   }
 
   /* logo */
-  .navbar__logo img{
-    width: 30%;
+  #navbar__logo img{
+    max-width: 200px;
+    width: 100%;
   }
 
   .header {
