@@ -215,6 +215,14 @@
   text-align: justify;
   place-items: start;
 }
+
+.italic{
+  font-style: italic;
+}
+
+.underline{
+  text-decoration: underline;
+}
 /* SERVICES */
 
 .services{
