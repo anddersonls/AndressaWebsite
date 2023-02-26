@@ -127,40 +127,16 @@
   transition: all 0.5s ease;
 }
 
-.aboutme_button:hover,
-.services_button:hover,
-.timeline_button:hover,
-.contact_button:hover{
-  background-color: #f1f2f3;
-  transform: translateY(-3px);
-  color:  #59554e;
-  border: 2px solid #59554e;
-}
-
 .services_button{
   background-color: #c8cacf;
   border: none;
   transition: all 0.5s ease;
 }
 
-{
-  background-color: #f0e0cc;
-  transform: translateY(-3px);
-  color: rgb(106, 72, 33);
-  border: 2px solid rgb(106, 72, 33);
-}
-
 .timeline_button{
   background-color: #59554e;
   border: none;
   transition: all 0.5s ease;
-}
-
-{
-  background-color: #f0e0cc;
-  transform: translateY(-3px);
-  color: rgb(106, 72, 33);
-  border: 2px solid rgb(106, 72, 33);
 }
 
 .contact_button{
@@ -174,11 +150,14 @@
   font-size: 1.3rem;
 }
 
-{
-    background-color: #f0e0cc;
-    transform: translateY(-3px);
-    color: rgb(106, 72, 33);
-    border: 2px solid rgb(106, 72, 33);
+.aboutme_button:hover,
+.services_button:hover,
+.timeline_button:hover,
+.contact_button:hover{
+  background-color: #f1f2f3;
+  transform: translateY(-3px);
+  color:  #59554e;
+  border: 2px solid #59554e;
 }
 
 
