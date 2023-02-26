@@ -73,6 +73,7 @@
   width: 150px;
   text-decoration: none;
   height: 100%;
+  transition: all 0.5s ease;
 }
   
 .navbar__btn {
@@ -120,7 +121,7 @@
 }
 
 .aboutme_button{
-  background-color: rgb(192, 156, 116);
+  background-color: #b1b4c3;
   border: none;
   margin: 3px;
   transition: all 0.5s ease;
@@ -134,7 +135,7 @@
 }
 
 .services_button{
-  background-color: rgb(192, 156, 116);
+  background-color: #c8cacf;
   border: none;
   transition: all 0.5s ease;
 }
@@ -147,7 +148,7 @@
 }
 
 .timeline_button{
-  background-color: rgb(192, 156, 116);
+  background-color: #59554e;
   border: none;
   transition: all 0.5s ease;
 }
@@ -160,7 +161,7 @@
 }
 
 .contact_button{
-    background: rgb(192, 156, 116);
+    background: #a1c1be;
     border: none;
     transition: all 0.5s ease;
   }
