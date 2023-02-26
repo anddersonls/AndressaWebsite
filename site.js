@@ -1,37 +1,37 @@
 //Header
 const header = document.querySelector('.header');
 
-const navbar = `<div class="navbar__container">
-            <a href="index.html" id="navbar__logo"><img src="imagens/logo.png" alt="logo"></a>
-            <div class="navbar__toggle" id="mobile-menu">
-              <span class="bar"></span> 
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-              <li class="navbar__item">
-                <a href="index.html" class="navbar__links" id="home-page">Home</a>
-              </li>
-              <li class="navbar__item">
-                <a href="aboutme.html" class="navbar__links" id="about-page">Sobre Mim</a>
-              </li>
-              <li class="navbar__item">
-                <a href="services.html" class="navbar__links" id="services-page">Serviços</a>
-              </li>
-              <li class="navbar__item">
-                <a href="linhadotempo.html" class="navbar__links" id="services-page">Minha Jornada</a>
-              </li>
-              <li class="navbar__btn">
-                <a href="https://wa.me/5598984666133" class="button" id="signup"> <i class="fab fa-whatsapp"></i>Entre em contato</a>
-              </li>
-            </ul>
-          </div>`;
+const navbar = `<div class="navbar-container">
+                  <a href="index.html" id="navbar-logo"><img src="imagens/logo.png" alt="logo"></a>
+                  <div class="navbar-toggle" id="mobile-menu">
+                    <span class="bar"></span> 
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                  </div>
+                  <ul class="navbar-menu">
+                    <li class="navbar-item">
+                      <a href="index.html" class="navbar-links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="aboutme.html" class="navbar-links" id="about-page">Sobre Mim</a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="services.html" class="navbar-links" id="services-page">Serviços</a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="linhadotempo.html" class="navbar-links" id="services-page">Minha Jornada</a>
+                    </li>
+                    <li class="navbar-btn">
+                      <a href="https://wa.me/5598984666133" class="button" id="signup"> <i class="fab fa-whatsapp"></i>Entre em contato</a>
+                    </li>
+                  </ul>
+                </div>`;
 
 header.innerHTML += navbar;
 
 // Display Mobile Menu
 const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar__menu');
+const menuLinks = document.querySelector('.navbar-menu');
 
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
@@ -81,7 +81,6 @@ const addCards = () => {
                 </div>
             </div>`
   }).join('')
-  console.log(insertServicesCards)
   serviceCard.innerHTML = insertServicesCards
 }
 
