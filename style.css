@@ -9,7 +9,7 @@
   }
   
   body{
-    background-color: #f0e0cc;
+    background-color: #f1f2f3;
     min-height: 100vh;
     position: relative;
   }
@@ -25,7 +25,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #f0e0cc;
+  background-color: #f1f2f3;
   transition: all 0.3s ease;
 }
   
@@ -127,11 +127,14 @@
   transition: all 0.5s ease;
 }
 
-.aboutme_button:hover{
-  background-color: #f0e0cc;
+.aboutme_button:hover,
+.services_button:hover,
+.timeline_button:hover,
+.contact_button:hover{
+  background-color: #f1f2f3;
   transform: translateY(-3px);
-  color: rgb(106, 72, 33);
-  border: 2px solid rgb(106, 72, 33);
+  color:  #59554e;
+  border: 2px solid #59554e;
 }
 
 .services_button{
@@ -140,7 +143,7 @@
   transition: all 0.5s ease;
 }
 
-.services_button:hover{
+{
   background-color: #f0e0cc;
   transform: translateY(-3px);
   color: rgb(106, 72, 33);
@@ -153,7 +156,7 @@
   transition: all 0.5s ease;
 }
 
-.timeline_button:hover{
+{
   background-color: #f0e0cc;
   transform: translateY(-3px);
   color: rgb(106, 72, 33);
@@ -171,7 +174,7 @@
   font-size: 1.3rem;
 }
 
-.contact_button:hover{
+{
     background-color: #f0e0cc;
     transform: translateY(-3px);
     color: rgb(106, 72, 33);
@@ -353,7 +356,7 @@
 
 .timeline_textbox{
   padding: 20px 30px;
-  background: rgb(255, 255, 255);
+  background: #e4e5e7;
   position: relative;
   border-radius: 4px;
   font-size: 1rem;
@@ -373,7 +376,7 @@
   position:absolute;
   width: 6px;
   max-height: 80%;
-  background: white;
+  background: #e4e5e7;
   top: 200px;
   left: 50%;
   margin-left: -3px;
@@ -425,7 +428,7 @@
   top: 20px;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid rgb(255, 255, 255);
+  border-left: 15px solid #e4e5e7;
   right: -14px
 }
 
@@ -436,7 +439,7 @@
   top: 20px;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid rgb(255, 255, 255);
+  border-right: 15px solid #e4e5e7;
   left: -14px
 } 
 
@@ -474,7 +477,7 @@
   }
 
   .navbar__menu.active {
-    background: #f0e0cc;
+    background: #f1f2f3;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -489,7 +492,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #fff;
+    background: #59554e;
   }
 
   .navbar__item {
@@ -515,7 +518,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: rgb(192, 156, 116);
+    background: #59554e;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
     height: 60px;
