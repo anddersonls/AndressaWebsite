@@ -19,7 +19,7 @@ const navbar = `<div class="navbar-container">
                       <a href="services.html" class="navbar-links" id="services-page">Serviços</a>
                     </li>
                     <li class="navbar-item">
-                      <a href="linhadotempo.html" class="navbar-links" id="services-page">Minha Jornada</a>
+                      <a href="linhadotempo.html" class="navbar-links" id="time-page">Minha Jornada</a>
                     </li>
                     <li class="navbar-btn">
                       <a href="https://wa.me/5598984666133" class="button" id="signup"> <i class="fab fa-whatsapp"></i>Entre em contato</a>
@@ -68,21 +68,23 @@ const cards = [
   }
 ];
 
-const serviceCard = document.getElementById('services');
+if(document.getElementById('services') != null){
+  const serviceCard = document.getElementById('services');
 
-const addCards = () => {
-  const insertServicesCards = cards.map((item) => {
-    return `<div class="card">
-                <h3>${item.title}</h3>
-                <div class="card_container">
-                    <img src=${item.img} alt="${item.title}">
-                    <p>${item.text}</p>
-                    <a href="${item.link}" target="_blank">${item.linkText}</a>
-                </div>
-            </div>`
-  }).join('')
-  serviceCard.innerHTML = insertServicesCards
+  const addCards = () => {
+    const insertServicesCards = cards.map((item) => {
+      return `<div class="card">
+                  <h3>${item.title}</h3>
+                  <div class="card_container">
+                      <img src=${item.img} alt="${item.title}">
+                      <p>${item.text}</p>
+                      <a href="${item.link}" target="_blank">${item.linkText}</a>
+                  </div>
+              </div>`
+    }).join('')
+    serviceCard.innerHTML = insertServicesCards
+  }
+
+  addCards()
+
 }
-
-window.addEventListener('DOMContentLoaded', addCards)
-
