@@ -45,17 +45,23 @@ const footer = document.querySelector('.footer');
 
 const footerContent = `<div class="footer_container">
                         
-                          <p class="footer-title">Andressa Vandri</p>
-                          <p>Todos os direitos reservados &copy</p>
-                       
+                          <p class="footer-title">Andressa Vandri | CRP 22/04251</p>
+                          <p>Todos os direitos reservados &copy <span id="date"></span></p>
+
                         <div class="footer_icons_container">
                           <a href="https://wa.me/5598984666133"><i class="fab fa-whatsapp"></i></a>
                           <a href="https://www.instagram.com/andressavandri/"><i class="fab fa-instagram"></i></a>
+                          <a href="mailto:psiandressavandri@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                          
+                          
                         </div>
                       </div>`;
 
 footer.innerHTML += footerContent;
 
+//Footer data
+const date = document.getElementById('date');
+date.innerHTML = new Date().getFullYear();
 //Services card
 const cards = [
   {
